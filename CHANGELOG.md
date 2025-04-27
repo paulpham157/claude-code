@@ -1,20 +1,26 @@
 # Changelog
 
+## 0.2.82
+
+- Added support for --disallowedTools
+- Renamed tools for consistency: LSTool -> LS, View -> Read, etc.
+
 ## 0.2.75
 
 - Hit Enter to queue up additional messages while Claude is working
 - Drag in or copy/paste image files directly into the prompt
 - @-mention files to directly add them to context
 - Run one-off MCP servers with `claude --mcp-config <path-to-file>`
+- Improved performance for filename auto-complete
 
 ## 0.2.74
 
-- Add support for refreshing dynamically generated API keys (via `apiKeyHelper`), with a 5 minute TTL
+- Added support for refreshing dynamically generated API keys (via apiKeyHelper), with a 5 minute TTL
 - Task tool can now perform writes and run bash commands
 
 ## 0.2.72
 
-- Update spinner to indicate tokens loaded and tool usage
+- Updated spinner to indicate tokens loaded and tool usage
 
 ## 0.2.70
 
