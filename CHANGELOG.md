@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.107
+
+- CLAUDE.md files can now import other files. Add @path/to/file.md to ./CLAUDE.md to load additional files on launch
+
+## 0.2.106
+
+- MCP SSE server configs can now specify custom headers
+- Fixed a bug where MCP permission prompt didn't always show correctly
+
+## 0.2.105
+
+- Claude can now search the web
+- Moved system & account status to /status
+- Added word movement keybindings for Vim
+- Improved latency for startup, todo tool, and file edits
+
+## 0.2.102
+
+- Improved thinking triggering reliability
+- Improved @mention reliability for images and folders
+- You can now paste multiple large chunks into one prompt
+
 ## 0.2.100
 
 - Fixed a crash caused by a stack overflow error
