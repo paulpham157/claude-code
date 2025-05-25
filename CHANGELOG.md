@@ -1,8 +1,24 @@
 # Changelog
 
+## 1.0.1
+
+- Added `DISABLE_INTERLEAVED_THINKING` to give users the option to opt out of interleaved thinking.
+- Improved model references to show provider-specific names (Sonnet 3.7 for Bedrock, Sonnet 4 for Console)
+- Updated documentation links and OAuth process descriptions
+
+## 1.0.0
+
+- Claude Code is now generally available
+- Introducing Sonnet 4 and Opus 4 models
+
+## 0.2.125
+
+- Breaking change: Bedrock ARN passed to `ANTHROPIC_MODEL` or `ANTHROPIC_SMALL_FAST_MODEL` should no longer contain an escaped slash (specify `/` instead of `%2F`)
+- Removed `DEBUG=true` in favor of `ANTHROPIC_LOG=debug`, to log all requests
+
 ## 0.2.117
 
-- Breaking change: --print JSON output now returns nested message objects, for forwards-compatability as we introduce new metadata fields
+- Breaking change: --print JSON output now returns nested message objects, for forwards-compatibility as we introduce new metadata fields
 - Introduced settings.cleanupPeriodDays
 - Introduced CLAUDE_CODE_API_KEY_HELPER_TTL_MS env var
 - Introduced --debug mode
