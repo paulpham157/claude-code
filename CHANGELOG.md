@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.0.16
+
+- We now emit messages from sub-tasks in -p mode (look for the parent_tool_use_id property)
+
+## 1.0.11
+
+- Claude Code can now also be used with a Claude Pro subscription
+- Added /upgrade for smoother switching to Claude Max plans
+- Improved UI for authentication from API keys and Bedrock/Vertex/external auth tokens
+- Improved shell configuration error handling
+- Improved todo list handling during compaction
+
+## 1.0.10
+
+- Added markdown table support
+- Improved streaming performance
+
 ## 1.0.8
 
 - Fixed Vertex AI region fallback when using CLOUD_ML_REGION
