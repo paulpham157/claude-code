@@ -1,8 +1,32 @@
 # Changelog
 
-## 1.0.16
+## 1.0.22
+
+- SDK: Renamed `total_cost` to `total_cost_usd`
+
+## 1.0.21
+
+- Improved editing of files with tab-based indentation
+- Fix for tool_use without matching tool_result errors
+- Fixed a bug where stdio MCP server processes would linger after quitting Claude Code
+
+## 1.0.18
+
+- Added --add-dir CLI argument for specifying additional working directories
+- Added streaming input support without require -p flag
+- Improved startup performance and session storage performance
+- Added CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR environment variable to freeze working directory for bash commands
+- Added detailed MCP server tools display (/mcp)
+- MCP authentication and permission improvements
+- Added auto-reconnection for MCP SSE connections on disconnect
+- Fixed issue where pasted content was lost when dialogs appeared
+
+## 1.0.17
 
 - We now emit messages from sub-tasks in -p mode (look for the parent_tool_use_id property)
+- Fixed crashes when the VS Code diff tool is invoked multiple times quickly
+- MCP server list UI improvements
+- Update Claude Code process title to display "claude" instead of "node"
 
 ## 1.0.11
 
