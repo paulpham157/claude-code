@@ -1,5 +1,92 @@
 # Changelog
 
+## 1.0.97
+
+- Settings: /doctor now validates permission rule syntax and suggests corrections
+
+## 1.0.94
+
+- Vertex: add support for global endpoints for supported models
+- /memory command now allows direct editing of all imported memory files
+- SDK: Add custom tools as callbacks
+- Added /todos command to list current todo items
+
+## 1.0.93
+
+- Windows: Add alt + v shortcut for pasting images from clipboard
+- Support NO_PROXY environment variable to bypass proxy for specified hostnames and IPs
+
+## 1.0.90
+
+- Settings file changes take effect immediately - no restart required
+
+## 1.0.88
+
+- Fixed issue causing "OAuth authentication is currently not supported"
+- Status line input now includes `exceeds_200k_tokens`
+- Fixed incorrect usage tracking in /cost.
+- Introduced `ANTHROPIC_DEFAULT_SONNET_MODEL` and `ANTHROPIC_DEFAULT_OPUS_MODEL` for controlling model aliases opusplan, opus, and sonnet.
+- Bedrock: Updated default Sonnet model to Sonnet 4
+
+## 1.0.86
+
+- Added /context to help users self-serve debug context issues
+- SDK: Added UUID support for all SDK messages
+- SDK: Added `--replay-user-messages` to replay user messages back to stdout
+
+## 1.0.85
+
+- Status line input now includes session cost info
+- Hooks: Introduced SessionEnd hook
+
+## 1.0.84
+
+- Fix tool_use/tool_result id mismatch error when network is unstable
+- Fix Claude sometimes ignoring real-time steering when wrapping up a task
+- @-mention: Add ~/.claude/\* files to suggestions for easier agent, output style, and slash command editing
+- Use built-in ripgrep by default; to opt out of this behavior, set USE_BUILTIN_RIPGREP=0
+
+## 1.0.83
+
+- @-mention: Support files with spaces in path
+- New shimmering spinner
+
+## 1.0.82
+
+- SDK: Add request cancellation support
+- SDK: New additionalDirectories option to search custom paths, improved slash command processing
+- Settings: Validation prevents invalid fields in .claude/settings.json files
+- MCP: Improve tool name consistency
+- Bash: Fix crash when Claude tries to automatically read large files
+
+## 1.0.81
+
+- Released output styles, including new built-in educational output styles "Explanatory" and "Learning". Docs: https://docs.anthropic.com/en/docs/claude-code/output-styles
+- Agents: Fix custom agent loading when agent files are unparsable
+
+## 1.0.80
+
+- UI improvements: Fix text contrast for custom subagent colors and spinner rendering issues
+
+## 1.0.77
+
+- Bash tool: Fix heredoc and multiline string escaping, improve stderr redirection handling
+- SDK: Add session support and permission denial tracking
+- Fix token limit errors in conversation summarization
+- Opus Plan Mode: New setting in `/model` to run Opus only in plan mode, Sonnet otherwise
+
+## 1.0.73
+
+- MCP: Support multiple config files with `--mcp-config file1.json file2.json`
+- MCP: Press Esc to cancel OAuth authentication flows
+- Bash: Improved command validation and reduced false security warnings
+- UI: Enhanced spinner animations and status line visual hierarchy
+- Linux: Added support for Alpine and musl-based distributions (requires separate ripgrep installation)
+
+## 1.0.72
+
+- Ask permissions: have Claude Code always ask for confirmation to use specific tools with /permissions
+
 ## 1.0.71
 
 - Background commands: (Ctrl-b) to run any Bash command in the background so Claude can keep working (great for dev servers, tailing logs, etc.)
